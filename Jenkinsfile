@@ -5,9 +5,9 @@ pipeline {
   
     stage('one'){
       steps{
-        step {
-          echo 'step1'
-        }
+        
+        echo 'hello bhanu'
+
       }
     }
   
