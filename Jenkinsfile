@@ -14,7 +14,7 @@ pipeline {
     stage('one'){
       steps{
         sh '''
-        echo "one"
+        echo "${params.clientjourneysvc}"
         echo "two"
         '''
         sh 'date'
