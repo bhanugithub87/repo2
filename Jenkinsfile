@@ -13,9 +13,7 @@ pipeline {
         
         echo "backend: ${params.clientjourneysvc}"
         echo "frontend: ${params.clientjourneyui}"
-        sh 'id'
-        sh 'who'
-        sh 'ls -ltra'
+        sh 'chmod a+x run-deployment.sh'
         sh './run-deployment.sh'
 
       }
