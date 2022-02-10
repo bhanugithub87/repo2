@@ -13,6 +13,7 @@ pipeline {
   
     stage('one'){
       steps{
+        echo "${params.clientjourneysvc}"
         sh '''
         echo "${params.clientjourneysvc}"
         echo "two"
