@@ -20,11 +20,7 @@ pipeline {
         sh "./run-deployment.sh ${params.clientjourneysvc} ${params.clientjourneyui}"
 
       }
-      steps{
-        sh '$SHELL'
-        sh './run-deployment.sh'
-        
-      }
+
     }
   
   }
