@@ -6,6 +6,9 @@ pipeline {
         string(name: 'clientjourneyui',defaultValue: 'ui1', description: 'frontend version')
 
     }
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '5')) }
+  }
   stages {
   
     stage('one'){
