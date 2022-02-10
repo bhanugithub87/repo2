@@ -19,6 +19,7 @@ pipeline {
         echo "two"
         """
         sh 'date'
+        sh 'docker'
       }
 
     }
