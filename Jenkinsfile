@@ -13,12 +13,12 @@ pipeline {
   
     stage('one'){
       steps{
-        
+        sh 'date'
         echo "backend: ${params.clientjourneysvc}"
         echo "frontend: ${params.clientjourneyui}"
         sh 'chmod a+x run-deployment.sh'
         sh "./run-deployment.sh"
-
+        sh 'date'
       }
 
     }
