@@ -14,10 +14,10 @@ pipeline {
     stage('one'){
       steps{
         echo "${params.clientjourneysvc}"
-        sh '''
+        sh """
         echo "${params.clientjourneysvc}"
         echo "two"
-        '''
+        """
         sh 'date'
       }
 
