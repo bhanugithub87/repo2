@@ -17,7 +17,7 @@ pipeline {
         echo "backend: ${params.clientjourneysvc}"
         echo "frontend: ${params.clientjourneyui}"
         sh 'chmod a+x run-deployment.sh'
-        sh './run-deployment.sh'
+        sh "./run-deployment.sh ${params.clientjourneysvc} ${params.clientjourneyui}"
 
       }
     }
