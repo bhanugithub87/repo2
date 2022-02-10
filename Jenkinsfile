@@ -2,22 +2,17 @@ pipeline {
 
   agent any
   parameters {
-        string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+        string(name: 'clientjourneysvc', description: 'backend version')
+        string(name: 'clientjourneyui', description: 'frontend version')
 
-        text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some information about the person')
-
-        booleanParam(name: 'TOGGLE', defaultValue: true, description: 'Toggle this value')
-
-        choice(name: 'CHOICE', choices: ['One', 'Two', 'Three'], description: 'Pick something')
-
-        password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
   stages {
   
     stage('one'){
       steps{
         
-        echo 'hello bhanu'
+        echo "backend: ${params.clientjourneysvc}"
+        echo "frontend: ${params.clientjourneyui}"
 
       }
     }
