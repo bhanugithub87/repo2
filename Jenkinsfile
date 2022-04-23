@@ -9,7 +9,7 @@ def empno = ename as int
         println empno.getClass()
         println params
         println env
-        println currentBuild
+        println currentBuild.buildVariables
     }
     
 }
