@@ -3,7 +3,7 @@
 properties([parameters([string('empno')])])
 def empno
 def names = ['one','two','three']
-def nameExists;
+
 try{
     
     node{
