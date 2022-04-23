@@ -1,13 +1,16 @@
 #!groovy
 
-properties([parameters([string('employee number')])])
-
+properties([parameters([string('empno')])])
+def empno
 try{
     
     node{
     
         stage('build...'){
-            echo 'underC'
+            
+            empno = params.empno
+            println empno
+            
         }
         
     }
