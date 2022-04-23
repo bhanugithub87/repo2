@@ -8,7 +8,7 @@ try{
     
         stage('build...'){
             
-            empno = params.empno
+            empno = params.empno as int
             println empno
             
         }
