@@ -1,6 +1,6 @@
 #!groovy
 
-properties([parameters([string('empno')])])
+properties([parameters([string('empnumber')])])
 def empno
 def names = ['one','two','three']
 
@@ -11,7 +11,6 @@ try{
         stage('build...'){
             
             println names.getClass()
-            echo params.empno
             nameExists = params.empno in names
             if(nameExists){
                 echo 'true case'
