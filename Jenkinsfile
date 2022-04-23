@@ -9,7 +9,13 @@ try{
         stage('build...'){
             
             empno = params.empno as int
-            println empno
+            
+                if(empno == 100){
+                    echo 'empno is hundred'
+                }else{
+                    echo 'empno is not hundred'
+                }
+                
             
         }
         
