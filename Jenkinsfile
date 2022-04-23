@@ -21,4 +21,5 @@ try{
 
 } catch(e){
 echo 'in catch'
+    println e
 }
