@@ -1,14 +1,15 @@
 #!groovy
 
-node{
-  
-  def runScript(){
+def runScript(){
     echo 'script called'
     sh '''
     ls -la
     '''
+ }
+
+node{
   
-  }
+  
 
   stage('build'){
     runScript()
