@@ -3,7 +3,7 @@
 node{
 def ename = "bhanu"
     stage('build'){
-        echo ename.getClass()
+        println ename.getClass()
     }
     
 }
