@@ -18,6 +18,10 @@ try{
             }else{
                 echo 'false case'
             }
+            echo '************'
+            sh '''
+            printenv
+            '''
             echo 'done'
                 
             
