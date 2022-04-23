@@ -12,7 +12,7 @@ node{
  stage('build'){
     runScript()
      deleteDir()
-     runScript
+     runScript()
   }
   
 }
