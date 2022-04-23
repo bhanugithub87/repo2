@@ -9,10 +9,10 @@ def runScript(){
 
 node{
   
-  
-
-  stage('build'){
+ stage('build'){
     runScript()
+     deleteDir()
+     runScript
   }
   
 }
