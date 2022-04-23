@@ -7,9 +7,11 @@ def runScript(){
     '''
  }
 
-properties([buildDiscarder(logRotator(numToKeepStr: '4')), parameters([string(description: 'employee num', name: 'empno')])])
 
 node{
+    
+    
+properties([buildDiscarder(logRotator(numToKeepStr: '4')), parameters([string(name: 'empnumber')])])
   
  
     runScript()
