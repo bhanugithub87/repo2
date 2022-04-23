@@ -13,6 +13,8 @@ node{
     runScript()
      deleteDir()
      runScript()
+     checkout scm
+     runScript()
   }
   
 }
