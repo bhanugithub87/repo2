@@ -1,7 +1,7 @@
 #!groovy
 
 node{
-def ename = "bhanu"
+def ename = "5000"
 def empno = ename as int
     stage('build'){
         println ename.getClass()
