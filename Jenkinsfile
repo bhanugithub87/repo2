@@ -7,6 +7,7 @@ def empno = ename as int
         println ename.getClass()
         println empno.getClass()
         println params
+        println env
     }
     
 }
