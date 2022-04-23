@@ -1,11 +1,17 @@
 #!groovy
 
-node{
-def ename = "5000"
-def empno = ename as int
-    println currentBuild.result
-    println currentBuild.currentResult
-    echo 'printing envs'
-println env.BUILD_NUMBER
+properties([parameters([string('employee number')])])
+
+try{
     
+    node{
+    
+        stage('build...'){
+            echo 'underC'
+        }
+        
+    }
+
+} catch(e){
+echo 'in catch'
 }
