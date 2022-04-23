@@ -2,19 +2,16 @@
 
 properties([parameters([string('empno')])])
 def empno
+def names = ['one','two','three']
 try{
     
     node{
     
         stage('build...'){
             
-            empno = params.empno as int
+            println names.getClass()
             
-                if(empno == 100){
-                    echo 'empno is hundred'
-                }else{
-                    echo 'empno is not hundred'
-                }
+    
                 
             
         }
