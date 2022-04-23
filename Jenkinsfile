@@ -2,7 +2,7 @@
 
 node{
 def ename = "bhanu"
-def empno = 10
+def empno = ename as int
     stage('build'){
         println ename.getClass()
         println empno.getClass()
