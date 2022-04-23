@@ -12,7 +12,7 @@ try{
             
             println names.getClass()
             nameExists = 'two' in names
-            echo nameExists
+            echo 'done'
                 
             
         }
