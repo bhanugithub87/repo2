@@ -12,7 +12,7 @@ try{
             
             println names.getClass()
             echo params.empno
-            nameExists = 'two' in params.empno
+            nameExists = params.empno in names
             if(nameExists){
                 echo 'true case'
             }else{
