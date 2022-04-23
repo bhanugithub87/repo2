@@ -9,12 +9,12 @@ def runScript(){
 
 node{
   
- stage('build'){
+ 
     runScript()
      deleteDir()
      runScript()
      checkout scm
      runScript()
-  }
+  
   
 }
