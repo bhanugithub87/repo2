@@ -11,7 +11,7 @@ try{
         stage('build...'){
             
             println names.getClass()
-            nameExists = 'two' in names
+            nameExists = 'two' in params.empno
             if(nameExists){
                 echo 'true case'
             }else{
