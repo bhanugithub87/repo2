@@ -1,3 +1,5 @@
+#!groovy
+
 node{
   
   def runScript(){
@@ -9,7 +11,7 @@ node{
   }
 
   stage('build'){
-    runScript
+    runScript()
   }
   
 }
