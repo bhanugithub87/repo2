@@ -12,6 +12,11 @@ try{
             
             println names.getClass()
             nameExists = 'two' in names
+            if(nameExists){
+                echo 'true case'
+            }else{
+                echo 'false case'
+            }
             echo 'done'
                 
             
